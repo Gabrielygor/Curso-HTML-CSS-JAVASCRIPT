@@ -9,12 +9,23 @@ main{
     padding: 1opx;
     margin: auto;
     box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    border-radius: 50px;
 }
 div{
-    background-color: rgba(70, 31, 31, 0.979);
+    background-color: rgba(0, 0, 0, 0.979);
+    border-radius: 40px;
 }
 
 h1{
     text-align: center;
     text-shadow: 1px 1px 1px white;
+}
+
+
+h2{
+    color: #fff;
+}
+
+p2{
+    color: #fff;
 }
