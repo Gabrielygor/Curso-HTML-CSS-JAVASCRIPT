@@ -1,5 +1,20 @@
+@charset "UTF-8";
 
 *{
-    background: linear-gradient(to right, #D97823, #F2600C);
+    font-family: Blippo, fantas
 }
 
+main{
+    background: linear-gradient(to right, #8ffc00, #8805f3 , #ca00fc , #ff00ff00);
+    padding: 1opx;
+    margin: auto;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+div{
+    background-color: rgba(70, 31, 31, 0.979);
+}
+
+h1{
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+}
