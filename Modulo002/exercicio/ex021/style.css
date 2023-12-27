@@ -1,0 +1,67 @@
+body{
+    background-color: #b2b2b2;
+    margin: 0px;
+}
+
+
+
+header{
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+nav{
+    background: linear-gradient(to right, #8f8f8f ,  #37332d , #686054);
+    color: black;
+    padding: 3px;
+    
+}
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+}
+
+nav > a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+main{
+
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 10px;
+}
+
+#principal{
+    background-color: #a6a6a6;
+    box-shadow: 2px 2px 2px #37332d;
+    width: 400px;
+    margin: auto;
+    border-radius: 5px 30px 5px 30px;
+}
+
+.titulonoticia{
+    text-align: center;
+}
+
+.noticia{
+    background-color: transparent;
+}
+
+
+hr{
+    color: rgb(255, 255, 255);
+}
+footer{
+    background-color: #808080;
+    text-align: center;
+    color: white;
+    padding: 1px;
+    margin: 0px;
+}
+
