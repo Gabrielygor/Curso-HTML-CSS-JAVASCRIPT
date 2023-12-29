@@ -102,11 +102,15 @@ article{
 article > h1{
     font-family: android;
     background: linear-gradient(to right, #3ddc84, #ffffff );
+    padding-left: 20px;
+    border-radius: 10px;
 }
 
 article > h2{
     font-family: android;
     background: linear-gradient(to right, #3ddc84, #ffffff );
+    padding-left: 20px;
+    border-radius: 10px;
 }
 
 aside{
