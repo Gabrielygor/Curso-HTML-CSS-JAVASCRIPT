@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form teste</title>
+
+    <style>
+        body{
+            background-color: bisque ;
+        }
+
+        .input{
+            margin: 50px;
+            border: none;
+        }
+        
+        #password{
+            background-color: aquamarine;
+        }
+
+        .date{
+            direction: none;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div>
+        <form action="#" method="post" autocomplete="on">
+            
+            <div class="input" id="name">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required minlength="4" autocomplete="username">
+            </div>
+            
+            <div class="input" id="password">
+                <label for="password">Senha:</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+
+            <input type="submit" value="Submit" id="submitbottom">
+
+            <input type="reset" value="reset" id="resetbottom">
+
+            <input type="date" name="" id="" class="date">
+            
+            <input type="range" name="" id="">
+
+            <input type="time" name="" id="">
+            
+        </form>
+    </div>
+    
+
+
+</body>
+</html>
