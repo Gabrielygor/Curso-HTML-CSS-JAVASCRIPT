@@ -1,0 +1,51 @@
+/* Configurações GERAIS */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat:no-repeat ;
+}
+
+
+/* Aparelho em "pé" */
+
+@media (orientation: portrait) {
+    body{
+        background-color: #233eff;
+        background-image: url("../image/cev-portrait.jpg");
+    }
+
+    h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    button{
+        background-color: blue;
+        border: none;
+        border-radius: 10px;
+        margin-left: 200px;
+        margin-top: 100px;
+        padding: 40px;
+    }   
+} 
+
+
+
+/* Aparelho "deitado" */
+
+@media (orientation: landscape) {
+    body{
+        background-color: #233eff;
+        background-image: url("../image/cev-landscape.jpg");
+        background-position: left bottom;
+    }
+} 
