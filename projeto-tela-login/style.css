@@ -1,0 +1,186 @@
+/* Reset */
+
+*{
+    padding: 0; 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+/* Mobile Frist */
+
+body , html{
+    height: 100vh;
+    width: 100vw;
+    background-color: #3d3c31;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+section#login{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    transition: width 1s, heigth 1s;
+
+
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.713);
+}
+
+div#image{
+    display: block;
+    background: url('image/pexels-eberhard-grossgasteiger-19780254\(1\).jpg');
+
+    height: 250px;
+    background-position: left bottom ;
+    background-size: cover;
+}
+
+div#login{
+    display: block;
+    padding: 20px;
+}
+
+div > p{
+    padding-top: 5px;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    font-size: 0.9rem;
+}
+
+.submit{
+    background-color: #3d3c31;
+    color: white;
+
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+
+
+.submit:hover{
+    background-color: #31312a;
+    cursor: pointer;
+}
+
+.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    height: 30px;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+.botao:hover{
+    background-color: #192324;
+    color: white;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+#icone{
+    margin: 3px;
+}
+
+div > input{
+    height: 100%;
+    background-color: transparent;
+    transform: translateY(-5px);
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+    body{
+        background-image: linear-gradient(to bottom, #3d3c31, #192324);
+    }
+
+    section#login{
+        width: 700px;
+    }
+
+    div#image{
+        float: left;
+        width: 50%;
+        height: 100%; 
+     }
+ 
+     div#login{
+         float: right;
+         width: 50%;
+     }
+     
+     form{
+        margin-top: 100px;
+    }
+
+    .submit{
+        margin-top: 150px;
+     }
+
+} 
+
+
+
+
+
+/* Computador e telas maiores */
+
+@media screen and (min-width: 992px){
+    
+    body{
+        background-image: linear-gradient(to bottom, #3d3c31, #192324);
+    }
+
+    section#login{
+        width: 950px;
+    }
+
+    div#image{
+       float: right;
+       width: 50%;
+       height: 100%; 
+    }
+
+    div#login{
+        float: left;
+        width: 50%;
+    }
+
+    form{
+        margin-top: 100px;
+    }
+
+    .submit{
+        margin-top: 150px;
+     }
+
+}
