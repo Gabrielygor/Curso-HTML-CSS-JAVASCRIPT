@@ -10,7 +10,7 @@
     
 
 </head>
-<body>
+<body onresize="mudouTamanho()">
     
     <header>
 
@@ -27,8 +27,9 @@
                 <li><a href="#">opção1</a></li>
                 <li><a href="#">opção1</a></li>
                 <li><a href="#">opção1</a></li>
-        </menu>    
             </ul>
+        </menu>    
+            
         
     </header>
 
@@ -57,15 +58,25 @@
 
     <script>
 
-        function clickMenu(){
+    function clickMenu() {
+        var itens = document.getElementById('itens');
 
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
-            
+        if (itens.style.display == 'block') {
+            itens.style.display = 'none';
+        } else {
+            itens.style.display = 'block';
         }
+    }
+
+    function mudouTamanho() {
+        var itens = document.getElementById('itens');
+
+        if (window.innerWidth >= 992) {
+            itens.style.display = 'block';
+        } else {
+            itens.style.display = 'none';
+        }
+    }
 
 
     </script>

@@ -79,3 +79,14 @@ footer{
     text-align: center;
 }
 
+
+@media screen and (min-width: 992px){
+    #icon{
+        display: none;
+    }
+
+    header > menu > ul > li > a{
+        display: block;
+    }
+    
+}
