@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: gray;
+}
+
+#parag{
+    margin-top: 30px;
+    width: 100px;
+    background-color: aqua;
+    border-radius: 20px;
+    text-align: center;
+    
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#parag:hover{
+    background-color: rgb(4, 237, 160);
+    transition: all 1s ease-in-out;
+    
+}
