@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 005</title>
+
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        #box{
+            line-height: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            text-align: center;
+            margin: auto;
+            margin-top: 200px;
+        }
+
+    </style>
+
+</head>
+<body>
+        <h1>Estudos Dom</h1>
+        <p>DOM == Document Object Model</p>
+        <div id="box" onclick="clik()"  onmouseenter="enter()" onmouseout="out()">
+            test
+        </div>
+
+
+    <script>
+
+        function clik(){
+            var a = window.document.getElementById('box')
+            a.innerText = 'clik'
+            a.style.background = 'pink'
+        }
+
+        function enter(){
+            var a = window.document.getElementById('box')
+            a.innerText = 'Enter'
+            a.style.background = 'gray'
+        }
+
+        function out(){
+            var a = window.document.getElementById('box')
+            a.innerText = 'out'
+            a.style.background = 'orange'
+        }
+
+    </script>
+
+</body>
+</html>

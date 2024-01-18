@@ -1,12 +1,33 @@
-#galeria{
+body{
+    background-color: #191919;
+}
+
+.container {
+    width: 98vw;
+    height: 98vh;
+    background: #191919;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+.box{
+
+    background-color: #3f3f3f;
 
     display: flex;
     width: 1000px;
     height: 800px;
+    margin: auto;
+    margin-right: auto; 
+
+
 
 }
 
-#galeria > img{
+.box > img{
 
     width: 0;
     flex-grow: 1;
@@ -16,11 +37,19 @@
 
 }
 
-#galeria > img:hover{
+.box > img:hover{
 
     cursor: crosshair;
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
+}
 
+@media screen and (min-width: 320){
+
+.box{
+
+    background-color: aliceblue;
+
+}
 }
