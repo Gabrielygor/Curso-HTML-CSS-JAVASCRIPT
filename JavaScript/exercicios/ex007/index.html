@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: gray;
+            margin: 1rem;
+        }
+
+        div#res{
+            text-align: center;
+            background-color: black;
+            color: wheat;
+            font-size: 2rem;
+            margin-top: 4rem;
+            }
+        
+            div#res:hover{
+                background-color: brown;
+            }
+
+        input#x{
+            padding: 10px;
+            border-radius: 20px;
+            border: none;            
+        }
+
+        input#verificar{
+            width: 4rem;
+            height: 1.5rem;
+            margin-left: 2.5rem;
+        }
+
+                
+    </style>
+
+</head>
+
+<body>
+    
+    <H1>Calculdara de Limite de velocidade</H1>
+
+    <input type="number" name="x" id="x">
+    <input type="button" value="verificar" onclick="cal()" id="verificar">
+    <div id="res"></div> 
+
+    <script>
+
+        //Variaveis e condiciomais igual a outras materias de programação, facil e rapido de entender
+
+        function cal(){
+
+            var x = window.document.querySelector('input#x')
+            var vel = Number(x.value)
+            var res = window.document.querySelector('div#res')
+
+            res.innerHTML = `Sua velocidade é de ${vel}` //Printa na tela quando apertar o botão de verificar
+
+            // if , else if e else  
+
+            if(vel > 70){
+                res.innerHTML =(`Multado!! Sua velocidade foi de ${vel}`) 
+            }else if(vel < 70){
+                res.innerHTML =(`Não foi multado!! Sua velocidade foi de ${vel}`)
+            }else{
+                res.innerHTML =(`Sua velocidade foi de ${vel} passou no limite da via. `)
+            }
+
+        }
+        
+
+    </script>
+</body>
+</html>
