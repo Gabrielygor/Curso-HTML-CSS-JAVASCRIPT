@@ -10,6 +10,9 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px solid black;
+    margin-top: -100px;
     }
 
 
@@ -18,8 +21,8 @@ body{
     background-color: #3f3f3f;
 
     display: flex;
-    width: 1000px;
-    height: 800px;
+    width: 600px;
+    height: 400px;
     margin: auto;
     margin-right: auto; 
 
@@ -45,11 +48,15 @@ body{
     filter: contrast(120%);
 }
 
-@media screen and (min-width: 320){
+#testo{
+    color: #fff;
 
-.box{
-
-    background-color: aliceblue;
-
-}
-}
+    width: 700px;
+    height: 100px;
+    background-color: #808080;
+    margin: auto;
+    margin-top: -210px;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+}   

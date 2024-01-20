@@ -11,14 +11,51 @@
     <section >
     <div class="container">
         <div class="box">
-            <img src="https://cdn.pixabay.com/photo/2023/09/04/07/39/ai-generated-8232206_1280.png" alt="naruto">
-            <img src="https://i.pinimg.com/564x/57/3c/f9/573cf9c1f9f60c61b3f1d283a511b548.jpg" alt="kakashi">
-            <img src="https://i.pinimg.com/564x/18/06/67/1806675392333a994fbf7b6a54d24f78.jpg" alt="time7">
+            <img src="https://cdn.pixabay.com/photo/2023/09/04/07/39/ai-generated-8232206_1280.png" onmouseenter="img1()" onmouseout="out()"   alt="naruto">
+            <img src="https://i.pinimg.com/564x/57/3c/f9/573cf9c1f9f60c61b3f1d283a511b548.jpg" onmouseenter="img2()" onmouseout="out()" alt="kakashi">
+            <img src="https://i.pinimg.com/564x/18/06/67/1806675392333a994fbf7b6a54d24f78.jpg" onmouseenter="img3()" onmouseout="out()" alt="time7">
             <img src="https://i.pinimg.com/564x/c9/2d/18/c92d1858bd7fda7668ea6254a2fafb05.jpg" alt="narutoesasuke">
-            <img src="https://i.pinimg.com/564x/8b/23/d3/8b23d303b296f282f66d476df26c644c.jpg" alt="zoro">
+            <img src="https://i.pinimg.com/564x/b4/80/f3/b480f3a398395421cd6f195dfd7760bb.jpg" alt="zoro">
         </div>
     </div>
+
+    <div id="testo">
+
+        <p id="texto">
+            
+        </p>
+
+    </div>
+
     </section>
+
+    <script>
+
+        var texto = window.document.querySelector('p#texto')
+
+        function img1(){
+
+           texto.innerHTML = ("Naruto Uzumaki ") 
+
+        }
+
+        function img2(){
+
+            texto.innerHTML = ("Cavaleiro Rosa Com Espada")
+        }
+
+        function img3(){
+
+            texto.innerHTML = ("Caveira em Chamas")
+        }
+
+        function out(){
+
+            texto.innerHTML = ("")
+        }
+
+    </script>
+
 
 </body>
 </html>
